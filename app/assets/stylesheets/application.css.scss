@@ -16,35 +16,37 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
  
+//typography styles
 h1, h2, h3 {
   font-family: 'Roboto', 'sans-serif';
 }
 
-.navbar {
+//navbor & home page style
+.navbar,
+.home_header{
   /*Gradient provided by @_ighosh and uiGradients.com*/
   background: #457fca; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #457fca , #5691c8); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #457fca , #5691c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border: none;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a{
   color: white;
+  &:hover{
+    /*note - this is only if using SCSS!*/
+    color: white;
+    opacity: .85; 
+  }
 }
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover{
-  color: white;
-  opacity: .85;
-}
-
 
 .home_header {
-  /*Gradient provided by @_ighosh and uiGradients.com*/
-  background: #457fca; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #457fca , #5691c8); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #457fca , #5691c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: -20px;
   padding-top: 25px;
   padding-bottom: 50px;
   color: white;
 }
 
+.navbar{
+  border: none;
+}
