@@ -37,6 +37,17 @@ h1, h2, h3, .navbar-brand {
   font-weight: 800;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+  &:hover, &:focus{
+    background-color: #5691c8;  
+  }
+}
+
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a{
   color: white;
